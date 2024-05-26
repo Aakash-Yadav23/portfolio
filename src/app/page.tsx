@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const Home = () => {
   return (
-    <div className='min-h-screen bg-black flex justify-between items-center text-white'>
+    <div className='min-h-screen flex justify-between items-center text-white'>
       <main className='px-5 max-w-[1200px] gap-10 items-center flex flex-wrap flex-col md:flex-row md:flex-nowrap m-auto py-5 md:py-10'>
         <section id="hello" className='mb-20 max-w-[500px] flex flex-col flex-wrap w-full'>
           <h2 className='text-lg opacity-70 mb-2'>Hello, I am</h2>

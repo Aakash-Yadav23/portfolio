@@ -18,12 +18,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className}  dark`}>
-        <header className="fixed top-0">
+      <body className={`${inter.className}  bg-gradient-to-br from-black via-gray-900 to-black text-white`}>
+        <header className="fixed  top-0">
 
           <Navbar />
         </header>
-        <main className="main py-10  h-screen overflow-hidden ">
+        <main className="main  h-screen overflow-hidden ">
 
           {children}
         </main>
