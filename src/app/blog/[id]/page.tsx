@@ -2,6 +2,7 @@
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import img2 from '@/assets/kq6oh18wnDvlRBQrsGnGVTNDjeM.jpg';
+import Image from 'next/image';
 
 const SingleBlogPage = () => {
     const router = useRouter();
@@ -28,7 +29,7 @@ const SingleBlogPage = () => {
 
                 <h1 className='text-5xl font-bold'>{blogPost.title}</h1>
                 <p className='text-sm text-gray-500'>{blogPost.date}</p>
-                <img src={blogPost.image.src} alt={blogPost.title} className='my-5 w-full' />
+                <Image height={24} width={24} src={blogPost.image.src} alt={blogPost.title} className='my-5 w-full' />
                 <div dangerouslySetInnerHTML={{ __html: blogPost.content }} className='prose lg:prose-xl' />
             </div>
         </div>

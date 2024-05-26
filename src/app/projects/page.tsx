@@ -1,4 +1,3 @@
-// src/pages/projects.tsx
 import React from 'react';
 
 const projects = [
@@ -89,7 +88,7 @@ const ProjectsPage = () => {
     <div className="h-screen text-gray-300 px-5 lg:px-10 ">
       <div className="flex flex-col lg:flex-row">
         <div className="w-full h-screen pt-[80px] pb-5 overflow-y-scroll lg:w-1/4 p-5 border-r border-gray-700">
-          <h2 className="text-2xl font-bold mb-5">//projects</h2>
+          <h2 className="text-2xl font-bold mb-5">projects</h2>
           <ul className="space-y-4">
             {projects.map((project, index) => (
               <li key={index} className="flex items-center space-x-2">

@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { useForm, Controller } from 'react-hook-form';
 import dynamic from 'next/dynamic';
 import 'react-quill/dist/quill.snow.css';
+import Image from 'next/image';
 
 const ReactQuill = dynamic(() => import('react-quill'), { ssr: false });
 
@@ -78,7 +79,9 @@ const CreateNew: React.FC = () => {
                     />
                     <div className='flex gap-2 mt-2'>
                         {images.map((image, index) => (
-                            <img
+                            <Image
+                                height={24}
+                                width={24}
                                 key={index}
                                 src={URL.createObjectURL(image)}
                                 alt='Upload Preview'

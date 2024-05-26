@@ -1,11 +1,10 @@
-// src/pages/contact.tsx
 import React from 'react';
 import { Mail, Facebook, Linkedin, Github, Twitter } from 'lucide-react';
 
 const ContactPage = () => {
     return (
         <div className="min-h-screen  justify-center flex flex-col items-center py-20 px-5">
-            <h1 className="text-3xl font-bold mb-4">//contact_me</h1>
+            <h1 className="text-3xl font-bold mb-4">contact_me</h1>
             <p className="text-center mb-4 max-w-[800px]">
                 I’m looking forward to connecting with you. Don’t hesitate to reach out to me for a meeting today.
             </p>
